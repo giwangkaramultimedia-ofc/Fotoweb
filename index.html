@@ -231,9 +231,16 @@
 <div class="gesture-hint" id="gestureHint">✨ 1 jari: geser • 2 jari: putar/ shift + scroll (rotate) • 2 jari cubit (resize) • Double tap: hapus ✨✨</div>
 
 <div class="panel-left">
-    <div>
-        <div class="brand"> Fotoweb</div>
-        <div class="badge-pro">✦ @Giwangkaramultimedia ✦</div>
+    <div style="display: flex; align-items: center; gap: 12px;">
+        <!-- LOGO GAMBAR DARI PIXHOST -->
+        <img src="https://img2.pixhost.to/images/7296/716488501_alip-1776611219389.jpg" 
+             style="width: 48px; height: 48px; border-radius: 14px; object-fit: cover; box-shadow: 0 4px 12px rgba(255,59,111,0.3);" 
+             alt="logo"
+             onerror="this.src='https://placehold.co/48x48/ff7eb9/white?text=📸'">
+        <div>
+            <div class="brand">Fotoweb</div>
+            <div class="badge-pro">✦ @Giwangkaramultimedia ✦</div>
+        </div>
     </div>
     
     <div class="cam-container">
@@ -243,10 +250,12 @@
     
     <button class="btn-capture" id="snapBtn">📸 FOTO 📸</button>
 
-    <span class="label">✨ FILTERS (50+)</span>
-    <div class="scroll-area">
+<div style="display: flex; flex-direction: column; flex: 1; min-height: 0; margin-top: 8px;">
+    <span class="label" style="flex-shrink: 0;">✨ FILTERS (50+)</span>
+    <div class="scroll-area" style="flex: 1; overflow-y: auto; min-height: 0;">
         <div class="asset-grid" id="filter-grid"></div>
     </div>
+</div>
 </div>
 
 <div class="stage">
